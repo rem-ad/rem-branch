@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formlar</title>
+</head>
+<body>
+    
+    <form action="/home/register">
+        
+        <p>
+        Ad:<input type="text" name="ad" required placeholder="adım şudur">
+        </p>
+        <p>
+        Soyad:<input type="text" name="soyad" placeholder="soyadım şudur">
+        </p>
+        
+        <p>
+            Parola:
+            <input type="password" name="sifre" placeholder="şifrem şudur">
+        </p>
+        
+        <p>
+        Email:<input type="email" name="soyad" required placeholder="email adresim şudur">
+        </p>
+        
+        <p>
+        Beni Hatırla<input type="checkbox" name="benihatirla">
+        </p>
+        
+        <p>
+            Doğum Tarihi: <br>
+            <input type="date" name="dogumtarihi">
+        </p>
+        
+        <p>
+        Cinsiyet: <br>
+        Erkek<input type="radio" name="cinsiyeterkek">
+        Kadın<input type="radio" name="
+        cinsiyetkadin">
+        </p>
+        
+        <p>
+        Hobileriniz: <br>
+        Sinema<input type="checkbox" name="sinema">
+        Spor<input type="checkbox" name="spor">
+        Kitap Okumak<input type="checkbox" name="kitap">
+        </p>
+        
+        <p>
+            Kaç puan? <br>
+            <input type="range" min="0" max="100" step="10">
+        </p>
+        
+        <p>
+            <select name="sehirler" id="">
+                <option value="">
+                    Kocaeli
+                </option>
+                <option value="">
+                    İstanbul
+                </option>
+                <option value="">
+                    Çankırı
+                </option>
+            </select>
+        </p>
+        
+        <p>
+            <select multiple name="sehirlermultiple" id="">
+                <option value="">
+                    Kocaeli
+                </option>
+                <option value="">
+                    İstanbul
+                </option>
+                <option value="">
+                    Çankırı
+                </option>
+            </select>
+        </p>
+        
+        <p><input type="submit" value="kaydet" name="kaydet">
+        </p>
+        
+        <p>
+            <input type="reset" name="sifirla">
+        </p>
+        
+        
+    </form>
+    
+</body>
+</html>

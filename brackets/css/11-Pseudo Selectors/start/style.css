@@ -1,0 +1,90 @@
+/*Pseudo Element*/
+
+p::first-line{
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-weight: bold;
+    color: bisque;
+}
+
+p.about::first-line{
+    color: green;
+}
+
+p::first-letter{
+    font-size: 48px;
+}
+
+p::after{
+    content: "";
+    display: block;
+    background-color: yellowgreen;
+    padding: 10px;
+}
+
+
+/*Pseudo Class*/
+
+ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+ul li:first-child{
+    background-color: rgb(153, 141, 141);
+}
+
+ul li:last-child{
+    background-color: rgb(134, 119, 119);
+}
+
+ul li:nth-of-type(even){
+    border: 2px solid pink;
+}
+
+ul li:nth-of-type(odd){
+    border: 2px solid blue;
+}
+
+a{
+    padding: 8px 10px;
+    display: block;
+    border: 3px solid red;
+    margin-bottom: 5px;
+    width: 80px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+}
+
+a:active{
+    color: chocolate;
+    background-color: blueviolet;
+}
+
+span{
+    padding: 10px;
+    background-color: yellow;
+    display: none;
+}
+
+div:hover span{
+    display: block;
+}
+
+
+
+

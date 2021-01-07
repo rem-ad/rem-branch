@@ -1,0 +1,79 @@
+<!doctype html>
+<html amp lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script async custom-element="amp-web-push" src="https://cdn.ampproject.org/v0/amp-web-push-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+        <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+        <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+        <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+        <script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script>
+        
+        <script async custom-element="amp-next-page" src="https://cdn.ampproject.org/v0/amp-next-page-1.0.js"></script>
+        <script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script>
+        <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+        <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+        <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+
+    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+
+
+</head>
+<body>
+
+        <amp-consent layout="nodisplay" id="consent-element">
+                <script type="application/json">
+                  {
+                    "consentInstanceId": "my-consent",
+                    "consentRequired": "remote",
+                    "checkConsentHref": "https://example.com/api/check-consent",
+                    "promptUI": "consent-ui",
+                    "onUpdateHref": "https://example.com/update-consent"
+                  }
+                </script>
+                <div id="consent-ui">
+                  <button on="tap:consent-element.accept" role="button">Accept</button>
+                  <button on="tap:consent-element.reject" role="button">Reject</button>
+                  <button on="tap:consent-element.dismiss" role="button">Dismiss</button>
+                </div>
+              </amp-consent>
+              
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut nisi, aliquid iusto sunt, consectetur dolor facilis voluptatibus architecto dolore magni quidem officiis modi atque nulla quos incidunt minus, explicabo aliquam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam libero consequuntur optio omnis, deleniti fugiat illo error non? Quae soluta cum molestias veniam corporis distinctio consectetur obcaecati quidem fugit natus.</p> 
+    
+    <amp-ad width=320 height=100
+    type="doubleclick"
+    data-slot="/9927946/hurriyet_mobilsite/dunya/320x50"
+    data-enable-refresh="30">
+</amp-ad>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum optio maxime voluptatibus corrupti unde ex impedit, deserunt in assumenda. Facere deserunt aspernatur sequi sapiente tempore sunt quidem ratione ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam facere odit dicta, ut doloremque veritatis quo tempora vero, incidunt laboriosam ab laudantium harum commodi totam sapiente quod a. Autem, sint?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis soluta in ut placeat veniam impedit perferendis, cum quibusdam sequi adipisci commodi quia consequuntur voluptatum eligendi porro provident quo pariatur?</p>
+
+<amp-ad width=300 height=250
+    type="doubleclick"
+    data-slot="/9927946/hurriyet_mobilsite/dunya/300x250"
+    data-enable-refresh="30">
+</amp-ad>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod in, debitis labore voluptates ducimus error aliquid possimus odit, modi vitae maiores culpa inventore. Ut, ducimus iste nobis vero nihil distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatem obcaecati ut dolore animi voluptatum aperiam, quo nesciunt ea corrupti, possimus magnam consectetur ipsum voluptatibus illum fugiat nihil! Cum, officia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ab ipsa, nihil possimus eveniet consectetur quia ad natus voluptatibus obcaecati excepturi ratione sapiente aut a saepe vel atque qui maiores!</p>
+
+    <amp-sticky-ad layout="nodisplay">
+        <amp-ad
+          width="320"
+          height="100"
+          type="doubleclick"
+          data-slot="/9927946/hurriyet_mobilsite/dunya/sticky_320x50">
+        </amp-ad>
+      </amp-sticky-ad>
+      
+</amp-ad>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Css Inherit</title>
+	<style>
+		body{
+			font-size: 20px;
+		}
+
+		ul{
+			font-size: 15px;
+		}
+
+		li{
+			font-size: 25px;
+			background-color: bisque;
+			color: blueviolet;
+		}
+
+		a{
+			color: inherit;
+		}
+
+		span{
+			color: aqua;
+		}
+
+		#inheritid span{
+			color: inherit;
+		}
+
+		
+	</style>
+</head>
+
+<body>
+
+
+	<h1>Komple Uygulamalı Web Geliştirme</h1>
+
+
+	<ul>
+		<li>Html5</li>
+		<li>Css</li>
+		<li style="color: red">Javascript</li>
+		<li>
+			<a href="#">Jquery</a>
+		</li>
+	</ul>
+
+
+	<div id="inheritid">
+		Lorem ipsum <span>dolor sit amet,</span> consectetur adipisicing.
+	</div>
+
+	<div style="color: brown">
+		Lorem ipsum <span>dolor sit amet,</span> consectetur adipisicing.
+	</div>
+
+	<div style="color: brown">
+		Lorem ipsum <span>dolor sit amet,</span> consectetur adipisicing.
+	</div>
+
+
+
+</body>
+
+</html>
